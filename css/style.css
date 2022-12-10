@@ -1,24 +1,31 @@
-
-
+:root {
+    --colorA: #272343;
+    --colorB: #bae8e8;
+    --colorC: #e3f6f5;
+    --colorD: #ffffff;
+    
+  }
 body {
-    background-color: #f2e4db;
+     background-color: var(--colorC); 
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
+    
 }
 
 /*------LOGO------------------- */
 .logo {
-    height: 200px;
+    height: 100px;
     display: flex;
     justify-content: center;
+    
 }
 
 /* -----------------NAV BAR-------------------------------*/
 /* Add a black background color to the top navigation */
 #topnav {
-    background-color: #9c469a;
+    background-color: var(--colorA);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -38,14 +45,14 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #f2e4db;
+    background-color: var(--colorB);
     color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #eb9e00;
-    color: white;
+    background-color: var(--colorB);
+    color: var(--colorA);
 }
 
 /*-----------------NAV BAR END-----------------------------*/
@@ -87,28 +94,28 @@ body {
 }
 
 .teamA {
-    background-color: #eb9e00;
+    background-color: var(--colorB);
     /* border-radius: 20px 0px 0px 0px;    */
 }
 
 .scoreA {
     font-size: 20px;
     font-weight: bolder;
-    background-color: #eb9e00;
+    background-color: var(--colorB);
     text-align: center;
     vertical-align: middle;
     /* border-radius: 0px 20px 0px 0px; */
 }
 
 .teamB {
-    background-color: #9c469a;
+    background-color: var(--colorA);
     /* border-radius: 0px 0px 0px 20px;    */
 }
 
 .scoreB {
     font-size: 20px;
     font-weight: bolder;
-    background-color: #9c469a;
+    background-color: var(--colorA);
     text-align: center;
     vertical-align: middle;
     /* border-radius: 0px 0px 20px 0px;     */
@@ -116,7 +123,7 @@ body {
 
 .sidebarnews {
     width: 100%;
-    background-color: #9c469a;
+    background-color: var(--colorA);
     height: auto;
     padding: 0px;
     color: white;
@@ -136,16 +143,16 @@ body {
 }
 
 .sidebarnews tr:nth-child(even) td {
-    background-color: #9c469a;
+    background-color: var(--colorA);
 }
 
 .sidebarnews tr:nth-child(odd) td {
-    background-color: #eb9e00;
+    background-color: var(--colorB);
 }
 
 /* ------------------------footer-----------------------------*/
 .footer {
-    background-color: #9c469a;
+    background-color: var(--colorA);
     color: white;     
     margin-top: 10px;
     height: 250px;
@@ -177,38 +184,86 @@ body {
 }
 /* ------------------------main content-----------------------------*/
 .main {
+    
     margin-left: 0px;
     padding-left: 10px;
-    box-shadow: #313131;
-    width: calc(100% - 250px);
-    
+    width: calc(100% - 250px);   
     
 }
-
-article {
-    height: auto;
-    background-color: white;
-    padding: 10px;
-    margin-top: 10px;
-    /* border-radius: 20px 20px 20px 20px; */
-    box-shadow: 0px 0px 102px 0px rgba(0, 0, 0, 0.5);
-}
-
-article h2 {
+.main-section-heading {
     font-size: 30px;
     font-weight: bold;
+    color: var(--colorB);    
+    margin-top: 10px;
+    padding: 5px; 
+    background-color: var(--colorA);  
+    color: var(--colorB);
 }
 
-article p {
-    font-size: 20px;
-    color: #313131;
+article:nth-child(even){
+    background-color: var(--colorB);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: var(--colorA);
+    margin-top: 10px;
+    
 }
 
+article:nth-child(odd){
+    background-color: var(--colorA);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: var(--colorB);
+    margin-top: 10px;
+     
+
+ }
+ 
 article img {
-    width: 100%;
+    width: 200px;
     height: auto;
+    
 }
+.article-content {
+    padding: 10px;
+    margin: 10px;
+   
+}
+/* ---------------------article end ---------------------------
+---------------------carosel--------------------------- */
+/* external css: flickity.css */
 
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body { font-family: sans-serif; }
+  
+  .gallery {
+    background: #EEE;
+  }
+  
+  .gallery-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 10px;
+    background: #8C8;
+    counter-increment: gallery-cell;
+  }
+  
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+  
 /* -----------------when screen width is small----------------- */
 @media (max-width: 768px) {
     .sidebar {
