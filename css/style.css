@@ -19,7 +19,6 @@ body {
     height: 100px;
     display: flex;
     justify-content: center;
-    
 }
 
 /* -----------------NAV BAR-------------------------------*/
@@ -135,6 +134,7 @@ body {
 
 .sidebarnews thead {
     font-size: 20px;
+    color: var(--colorB);
 }
 
 .sidebarnews td {
@@ -144,10 +144,12 @@ body {
 
 .sidebarnews tr:nth-child(even) td {
     background-color: var(--colorA);
+    color: var(--colorB);
 }
 
 .sidebarnews tr:nth-child(odd) td {
     background-color: var(--colorB);
+    color: var(--colorA);
 }
 
 /* ------------------------footer-----------------------------*/
@@ -232,35 +234,5 @@ article img {
    
 }
 /* ---------------------article end ---------------------------
----------------------carosel--------------------------- */
-/* external css: flickity.css */
 
-* {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  body { font-family: sans-serif; }
-  
-  .gallery {
-    background: #EEE;
-  }
-  
-  .gallery-cell {
-    width: 66%;
-    height: 200px;
-    margin-right: 10px;
-    background: #8C8;
-    counter-increment: gallery-cell;
-  }
-  
-  /* cell number */
-  .gallery-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-  }
-  
+
