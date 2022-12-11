@@ -1,0 +1,15 @@
+/* CSS for the carousel container */
+.carousel {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* CSS for the carousel items */
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    /* Additional styles for the carousel items go here */
+  }
