@@ -219,15 +219,20 @@ article img {
     color: var(--colorB);
     background-color: var(--colorA);
     border: #ffffff 10px solid;
-
-
 }
 
 .genre {
     width: 100%;
     border-collapse: collapse;
 }
-.genre td :hover {
-    background-color: var(--colorB);
-    color: black;
+.genre tr:last-child td {
+    border-bottom: none;
+}
+
+.genre tr td:first-child {
+    border-left: none;
+}
+
+.genre tr td:last-child {
+    border-right: none;
 }
