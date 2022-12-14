@@ -9,7 +9,7 @@
 
     --colorA: #004d43;
     --colorC: #ffffff;
-    --colorB: #dfcdcd;
+    --colorB: #f8ebdb;
 
 }
 
@@ -237,5 +237,6 @@ article img {
     border-right: none;
 }
 table.genre td:hover {
-    background-color: #06c;
+    background-color: var(--colorB);
+    color: var(--colorA);
     }
