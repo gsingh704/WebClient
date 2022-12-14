@@ -42,13 +42,33 @@ img {vertical-align: middle;}
 }
 
 .active {
-  background-color: #717171;
+  background-color: var(--colorB);
 }
 
- 
+.trendBookName  {
+  font-size: 20px;
+  color: var(--colorB);
+  padding: 10px;   
+  background-color: var(--colorA);
+  
+  text-align: center;
+}
+.trendBookName{
+  font-size: 20px;
+  color: var(--colorB);
+  padding: 10px;   
+  background-color: var(--colorA);  
+  text-align: center;
+}
+
+.trendDot{
+  text-align:center;
+  background-color: var(--colorA);
+  padding: 10px;
+}
     
  
-}
+
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -56,7 +76,7 @@ img {vertical-align: middle;}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .8} 
   to {opacity: 1}
 }
 

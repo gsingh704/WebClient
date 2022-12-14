@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/style-mobile.css" />
+    <link rel="stylesheet" href="/css/carosel.css" />
     
   </head>
   <body class="body">
@@ -28,62 +29,73 @@
     <div class="content">
       <!-- sidebar -->
       <div class="sidebar">
-        <table class="match">
-          <tr>
-            <td class="teamA">
-              <img src="/img/flags/spain.png" class="crest" />
-            </td>
-            <td class="scoreA">210/7 <br />(20)</td>
-          </tr>
-          <tr>
-            <td class="teamB">
-              <img src="/img/flags/england.png" class="crest" />
-            </td>
-            <td class="scoreB">205/10 <br />(18)</td>
-          </tr>
-        </table>
+           
+          <div class="slideshow-container">
+            <div  class="sidebarHead">TRENDING BOOKS  </div>
+            <div class="mySlides fade">
+              <div class="trendBookName">1 / 3</div>
+              <img src="https://m.media-amazon.com/images/I/51+jPK7pd8L.jpg" style="width:100%">
+              <div class="trendBookName">Book 1</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="trendBookName">2 / 3</div>
+              <img src="https://m.media-amazon.com/images/I/51fS3NRbNjL._SX342_SY445_QL70_ML2_.jpg" style="width:100%">
+              <div class="trendBookName">Book 2</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="trendBookName">3 / 3</div>
+              <img src="https://m.media-amazon.com/images/I/81DinLQTpsL.jpg" style="width:100%">
+              <div class="trendBookName">Book 3</div>
+            </div>
+            
+            </div>
+           
+            
+            <div class="trendDot">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+       
 
-        <table class="match">
-          <tr>
-            <td class="teamA">
-              <img src="/img/flags/saudiarabia.png" class="crest" />
-            </td>
-            <td class="scoreA">210/7 <br />(20)</td>
-          </tr>
-          <tr>
-            <td class="teamB">
-              <img src="/img/flags/portugal.png" class="crest" />
-            </td>
-            <td class="scoreB">205/10 <br />(18)</td>
-          </tr>
-        </table>
-
-        <table class="sidebarnews">
-          <thead>
+            <div  class="sidebarHead">TRENDING AUTHORS  </div>
+          
+        <table class="sidebarRank">         
+                         
             <tr>
-              <th>LATEST NEWS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Taskin ruled out of ODI series opener due to recurring backpain </td>
+              <td>1</td>
+              <td>J. K. Rowling</td>
+              <td><img src="/img/other/up.png"/></td>
             </tr>
             <tr>
-              <td>New Kookaburra ball poses new challenge to Bangladesh batters</td>
+              <td>2</td>
+              <td>Leo Tolstoy</td>
+              <td><img src="/img/other/same_white.png"/></td>
             </tr>
             <tr>
-              <td>Dubai Capitals and Abu Dhabi Knight Riders to kickstart inaugural ILT20</td>
+              <td>3</td>
+              <td>C. S. Lewis</td>
+              <td><img src="/img/other/down.png"/></td>
             </tr>
             <tr>
-              <td>England will be pushing for results, stresses McCullum</td>
+              <td>4</td>
+              <td>J. R. R. Tolkien</td>
+              <td><img src="/img/other/up.png"/></td>
             </tr>
-          </tbody>
+            <tr>
+              <td>5</td>
+              <td>George Orwell</td>
+              <td><img src="/img/other/down.png"/></td>
+            </tr>
+          
         </table>
       </div>
       <!-- main content -->
       <div class="main">
         <div class=main-section-heading>
-          <h2> New Books</h2>
+          New Books
         </div>
         <article> 
           <img src="/img/book/hp1.jpg" />          <div class="article-content">
@@ -96,7 +108,8 @@
         </article>
 
         <article>
-          <img src="/img/book/hp1.jpg" />          <div class="article-content">
+          <img src="/img/book/hp1.jpg" />      
+              <div class="article-content">
               <h2>Microsoft Edge</h2>
               <p>
                 Microsoft Edge is a web browser developed by Microsoft, released in
@@ -151,4 +164,5 @@
         </div>
       </div>
   </body>
+  <script src="/script/carosel.js"></script>
 </html>
