@@ -55,104 +55,8 @@ body {
 }
 
 /*-----------------NAV BAR END-----------------------------*/
-.content {
-    display: flex;
-    flex-wrap: nowrap;
-    
-}
 
-/*-----------------SIDE BAR-----------------------------*/
-.sidebar {
-    width: 250px;
-    height: 100%;
-    /* position: absolute; chnage this tro scroll*/
-    position: -webkit-sticky;
-    position: sticky;
-    top: 50px;
-   
-}
-
-.match {
-    margin-top: 10px;
-    width: 100%;
-    font-weight: bold;
-    color: white;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-.crest {
-    width: 40px;
-    height: auto;
-    padding: 10px;
-    /* center the image*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.teamA {
-    background-color: var(--colorB);
-    /* border-radius: 20px 0px 0px 0px;    */
-}
-
-.scoreA {
-    font-size: 20px;
-    font-weight: bolder;
-    background-color: var(--colorB);
-    text-align: center;
-    vertical-align: middle;
-    /* border-radius: 0px 20px 0px 0px; */
-}
-
-.teamB {
-    background-color: var(--colorA);
-    /* border-radius: 0px 0px 0px 20px;    */
-}
-
-.scoreB {
-    font-size: 20px;
-    font-weight: bolder;
-    background-color: var(--colorA);
-    text-align: center;
-    vertical-align: middle;
-    /* border-radius: 0px 0px 20px 0px;     */
-}
-
-.sidebarnews {
-    width: 100%;
-    background-color: var(--colorA);
-    height: auto;
-    padding: 0px;
-    color: white;
-    margin-top: 10px;
-    border-collapse: collapse;
-    border-spacing: 0;
-    /* border-radius: 20px 20px 20px 20px; */
-}
-
-.sidebarnews thead {
-    font-size: 20px;
-    color: var(--colorB);
-}
-
-.sidebarnews td {
-    height: 87px;
-    padding: 10px;
-}
-
-.sidebarnews tr:nth-child(even) td {
-    background-color: var(--colorA);
-    color: var(--colorB);
-}
-
-.sidebarnews tr:nth-child(odd) td {
-    background-color: var(--colorB);
-    color: var(--colorA);
-}
-
-/* ------------------------footer-----------------------------*/
+/*------------------------footer-----------------------------*/
 .footer {
     background-color: var(--colorA);
     color: white;     
@@ -184,23 +88,73 @@ body {
 .footer-social-img{
     height: 50px;
 }
-/* ------------------------main content-----------------------------*/
-.main {
-    
-    margin-left: 0px;
-    padding-left: 10px;
-    width: calc(100% - 250px);   
+/*------------------------footer end-----------------------------*/
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+   
     
 }
-.main-section-heading {
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--colorB);    
+/*-----------------SIDE BAR-----------------------------*/
+.sidebar {
+    width: 250px;
+    height: 100%;
+    /* position: absolute; chnage this tro scroll*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 45px;
+   
+      
+}
+.sidebarHead{
     margin-top: 10px;
-    padding: 5px; 
+    font-size: 22px;
+    font-weight: bold;
+    text-align-last: center;
+    padding: 10px 0px ;
+    background-color: var(--colorA);
+    color: var(--colorB);    
+}
+.sidebarRank {   
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sidebarRank img{
+    width: 30px;    
+}
+
+
+.sidebarRank tr:nth-child(even) td {
+    background-color: var(--colorA);
+    color: var(--colorB);
+    padding: 10px ;
+    font-weight: bold;
+}
+
+.sidebarRank tr:nth-child(odd) td {
+    background-color: var(--colorB);
+    color: var(--colorA);
+    padding: 10px  ;
+    
+}
+
+
+/* ------------------------main content-----------------------------*/
+.main {    
+    margin-left: 10px;
+    width: calc(100% - 250px);   
+    margin-top: 10px;      
+}
+.main-section-heading {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
     background-color: var(--colorA);  
     color: var(--colorB);
 }
+
 
 article:nth-child(even){
     background-color: var(--colorB);
@@ -209,7 +163,6 @@ article:nth-child(even){
     flex-direction: row;
     color: var(--colorA);
     margin-top: 10px;
-    
 }
 
 article:nth-child(odd){
@@ -219,19 +172,16 @@ article:nth-child(odd){
     flex-direction: row;
     color: var(--colorB);
     margin-top: 10px;
-     
-
+    border-radius: 5px;
  }
  
 article img {
     width: 200px;
-    height: auto;
-    
+    height: auto;    
 }
 .article-content {
     padding: 10px;
-    margin: 10px;
-   
+    margin: 10px;   
 }
 /* ---------------------article end ---------------------------
 
