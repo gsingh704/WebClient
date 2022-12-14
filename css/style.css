@@ -7,18 +7,19 @@
   } */
 :root {
 
---colorA: #004d43;
---colorC: #ffffff;
---colorB: #dfcdcd;  
+    --colorA: #004d43;
+    --colorC: #ffffff;
+    --colorB: #dfcdcd;
 
 }
+
 body {
-    background-color: var(--colorC); 
+    background-color: var(--colorC);
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
-    
+
 }
 
 /*------LOGO------------------- */
@@ -26,8 +27,8 @@ body {
     height: 100px;
     display: block;
     margin-left: auto;
-    margin-right: auto;   
-   
+    margin-right: auto;
+
 }
 
 /* -----------------NAV BAR-------------------------------*/
@@ -68,14 +69,14 @@ body {
 /*------------------------footer-----------------------------*/
 .footer {
     background-color: var(--colorA);
-    color: var(--colorB)  ;
+    color: var(--colorB);
     margin-top: 10px;
     height: 250px;
 }
 
 .footer-logo {
     width: 250px;
-    background-color:var(--colorC);
+    background-color: var(--colorC);
 
 }
 
@@ -85,69 +86,65 @@ body {
 .content {
     display: flex;
     flex-wrap: nowrap;
-      
+
 }
+
 /*-----------------SIDE BAR-----------------------------*/
 .sidebar {
     width: 250px;
     height: 100%;
     text-align: center;
- 
+
     /* position: absolute; chnage this tro scroll*/
     /* position: -webkit-sticky;
     position: sticky;
     top: 45px; */
-   
-      
+
+
 }
-.sidebarHead{
+
+.sidebarHead {
     margin-top: 10px;
     font-size: 22px;
     font-weight: bold;
     text-align-last: center;
-    padding: 10px 0px ;
+    padding: 10px 0px;
     background-color: var(--colorA);
-    color: var(--colorB);    
+    color: var(--colorB);
 }
-.sidebarRank {   
+
+.sidebarRank {
     width: 100%;
     border-collapse: collapse;
     font-size: 20px;
     font-weight: bold;
 }
-.sidebarRank img{
-    width: 30px;    
+
+.sidebarRank img {
+    width: 30px;
 }
 
 
 .sidebarRank tr:nth-child(even) td {
     background-color: var(--colorA);
     color: var(--colorB);
-    padding: 10px ;
+    padding: 10px;
     font-weight: bold;
 }
 
 .sidebarRank tr:nth-child(odd) td {
     background-color: var(--colorB);
     color: var(--colorA);
-    padding: 10px  ;
-    
+    padding: 10px;
+
 }
 
 
 /* ------------------------main content-----------------------------*/
-.main {    
+.main {
     margin-left: 10px;
-    width: calc(100% - 250px);   
+    width: calc(100% - 250px);
 
-}
-.main-section-heading {
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-    background-color: var(--colorA);  
-    color: var(--colorB);
-    margin-top: 10px;
 }
 
 .main-offer {
@@ -155,9 +152,9 @@ body {
     width: 100%;
     margin-top: 10px;
 }
+
 .main-offer img {
     width: 100%;
-    
 }
 
 .main-offer-text {
@@ -165,19 +162,25 @@ body {
     position: absolute;
     bottom: 20px;
     right: 20%;
-    background: rgba(255, 255, 255, 0.716) ;    
-    
     color: var(--colorA);
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
+    background: rgba(255, 255, 255, 0.716);
     backdrop-filter: blur(5px) brightness(100%);
 }
 
-
+.main-section-heading {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--colorA);
+    color: var(--colorB);
+    margin-top: 10px;
+}
 
 /*----------article-----------------*/
-article:nth-child(even){
+article:nth-child(even) {
     background-color: var(--colorB);
     display: flex;
     align-items: center;
@@ -186,22 +189,23 @@ article:nth-child(even){
     margin-top: 10px;
 }
 
-article:nth-child(odd){
+article:nth-child(odd) {
     background-color: var(--colorA);
     display: flex;
     align-items: center;
     flex-direction: row;
     color: var(--colorB);
     margin-top: 10px;
- }
- 
+}
+
 article img {
     width: 200px;
-    height: auto;    
+    height: auto;
 }
+
 .article-content {
     padding: 10px;
-    margin: 10px;   
+    margin: 10px;
 }
 
 /* ---------------------article end ---------------------------
@@ -215,11 +219,11 @@ article img {
     color: var(--colorB);
     background-color: var(--colorA);
     border: #ffffff 10px solid;
-    
-   
+
+
 }
-.genre{
+
+.genre {
     width: 100%;
     border-collapse: collapse;
-  }
-  
+}
