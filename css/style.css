@@ -8,7 +8,7 @@
 :root {
 
     --colorA: #004d43;
-    --colorC: #e4ded7;
+    --colorC: #ffffff;
     --colorB: #eed5b7;
 
 }
@@ -166,7 +166,7 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.716);
+    background: #eed5b779;
     backdrop-filter: blur(5px) brightness(100%);
 }
 
