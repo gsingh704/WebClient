@@ -218,7 +218,7 @@ article img {
     font-weight: bold;
     color: var(--colorB);
     background-color: var(--colorA);
-    border: #ffffff 10px solid;
+    border: var(--colorC) 10px solid;
 }
 
 .genre {
