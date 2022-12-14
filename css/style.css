@@ -211,6 +211,10 @@ article img {
 /* ---------------------article end ---------------------------
 
 /*------------------------- genre-------------- */
+.genre {
+    width: 100%;
+    border-collapse: collapse;
+}
 .genre td {
     padding: 20px;
     text-align: center;
@@ -221,10 +225,7 @@ article img {
     border: var(--colorC) 10px solid;
 }
 
-.genre {
-    width: 100%;
-    border-collapse: collapse;
-}
+
 .genre tr:last-child td {
     border-bottom: none;
 }
