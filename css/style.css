@@ -7,9 +7,9 @@
   } */
 :root {
 
---colorA: #009270;
---colorB: #ffffff;
---colorC: #ffffff;  
+--colorA: #004d43;
+--colorC: #ffffff;
+--colorB: #dfcdcd;  
 
 }
 body {
@@ -24,8 +24,9 @@ body {
 /*------LOGO------------------- */
 .logo {
     height: 100px;
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
    
 }
 
@@ -73,35 +74,18 @@ body {
 }
 
 .footer-logo {
-    width: 233px;
-    height: 230px;
-    padding: 10px;
-    background-color:var(--colorAC);
-    position: absolute;  
+    width: 250px;
+    background-color:var(--colorC);
 
 }
-.footer-logo-img {
-    width: 90%;
-    top:0;
-    bottom:0; 
-    margin: auto;
-    position: absolute; 
-   
-}
-.footer-section-about {    
-    left: 30%;
-    position: absolute;
-    width: 50%;    
-}
-.footer-social-img{
-    height: 50px;
-}
+
+
+
 /*------------------------footer end-----------------------------*/
 .content {
     display: flex;
     flex-wrap: nowrap;
-   
-    
+      
 }
 /*-----------------SIDE BAR-----------------------------*/
 .sidebar {
@@ -155,7 +139,7 @@ body {
 .main {    
     margin-left: 10px;
     width: calc(100% - 250px);   
-    margin-top: 10px;      
+
 }
 .main-section-heading {
     font-size: 60px;
@@ -163,9 +147,36 @@ body {
     text-align: center;
     background-color: var(--colorA);  
     color: var(--colorB);
+    margin-top: 10px;
+}
+
+.main-offer {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.main-offer img {
+    width: 100%;
+    
+}
+
+.main-offer-text {
+    font-size: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 20%;
+    background: rgba(255, 255, 255, 0.716) ;    
+    
+    color: var(--colorA);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    backdrop-filter: blur(5px) brightness(100%);
 }
 
 
+
+/*----------article-----------------*/
 article:nth-child(even){
     background-color: var(--colorB);
     display: flex;
@@ -192,6 +203,23 @@ article img {
     padding: 10px;
     margin: 10px;   
 }
+
 /* ---------------------article end ---------------------------
 
-
+/*------------------------- genre-------------- */
+.genre td {
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--colorB);
+    background-color: var(--colorA);
+    border: #ffffff 10px solid;
+    
+   
+}
+.genre{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  

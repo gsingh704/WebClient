@@ -2,20 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/style-mobile.css" />
     <link rel="stylesheet" href="/css/carosel.css" />
-    
   </head>
   <body class="body">
     <!-- create a logo area in header -->
-    <div class="logo">
-      <img src="/img/logo.png" alt="logo" />
-      
-    </div>
+    <img src="/img/logo.png" class="logo" alt="image" />
     <!-- create a logo area in header -->
     <div id="topnav" class="topnav">
       <a href="/index.html" class="active">Home</a>
@@ -25,144 +19,153 @@
       <a href="/html/login.html">Login</a>
       <!-- searchbutton-->
     </div>
-
+    <!-- ++++++++++++++++++++++++CONTENT++++++++++++++++++++++++++++ -->
     <div class="content">
-      <!-- sidebar -->
+      <!-- ++++++++++++++++++++++++SIDEBAR++++++++++++++++++++++++++++ -->
       <div class="sidebar">
-           
-          <div class="sideTrend">
-            <div  class="sidebarHead">TRENDING BOOKS  </div>
-            <div class="mySlides">
-              <div class="trendBookName">1 / 3</div>
-              <img src="/img/book/hp1.jpg"  >
-              <div class="trendBookName">Book 1</div>
-            </div>
-            
-            <div class="mySlides">
-              <div class="trendBookName">2 / 3</div>
-              <img src="/img/book/hp2.jpg"  >
-              <div class="trendBookName">Book 2</div>
-            </div>
-            
-            <div class="mySlides">
-              <div class="trendBookName">3 / 3</div>
-              <img src="/img/book/hp3.jpg"  >
-              <div class="trendBookName">Book 3</div>
-            </div>
-            
-            </div>
-           
-            
-            <div class="trendDot">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-       
+        <!-- +++++++++++++++++++++++++++++++TRENDING BOOK++++++++++++++++++++++++++++++++++++++ -->
+        <div class="sideTrend">
+          <div class="sidebarHead">TRENDING BOOKS</div>
+          <div class="mySlides">
+            <div class="trendBookName">1 / 3</div>
+            <img src="/img/book/hp1.jpg" alt="image" />
+            <div class="trendBookName">Book 1</div>
+          </div>
 
-            
-          
-        <table class="sidebarRank">         
-             <div  class="sidebarHead">TRENDING AUTHORS  </div>            
-            <tr>
-              <td>1</td>
-              <td>J. K. Rowling</td>
-              <td><img src="/img/other/up.png"/></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Leo Tolstoy</td>
-              <td><img src="/img/other/same_white.png"/></td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>C. S. Lewis</td>
-              <td><img src="/img/other/down.png"/></td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>J. R. R. Tolkien</td>
-              <td><img src="/img/other/up.png"/></td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>George Orwell</td>
-              <td><img src="/img/other/down.png"/></td>
-            </tr>
-          
-        </table>
-      </div>
-      <!-- main content -->
-      <div class="main">
-        <div class=main-section-heading>
-          New Books
+          <div class="mySlides">
+            <div class="trendBookName">2 / 3</div>
+            <img src="/img/book/hp2.jpg" alt="image" />
+            <div class="trendBookName">Book 2</div>
+          </div>
+
+          <div class="mySlides">
+            <div class="trendBookName">3 / 3</div>
+            <img src="/img/book/hp3.jpg" alt="image" />
+            <div class="trendBookName">Book 3</div>
+          </div>
+
+          <div class="trendDot">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
         </div>
-        <article> 
-          <img src="/img/book/hp1.jpg" />          <div class="article-content">
-            <h2>Microsoft Edge</h2>
-              <p>
-                Microsoft Edge is a web browser developed by Microsoft, released in
-                2015. Microsoft Edge replaced Internet Explorer.
-              </p>
-            </div>
-        </article>
-
-        <article>
-          <img src="/img/book/hp2.jpg" />      
-              <div class="article-content">
+        <!-- *****************************************END TRENDING BOOK********************************************** -->
+        <!-- ++++++++++++++++++++++++++++++++TRENDING AUTHOR+++++++++++++++++++++++++++++-->
+        <div class="sidebarHead">TRENDING AUTHORS</div>
+        <table class="sidebarRank">
+          <tr>
+            <td>1</td>
+            <td>J. K. Rowling</td>
+            <td><img src="/img/other/up.png " alt="image" /></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Leo Tolstoy</td>
+            <td><img src="/img/other/same_white.png" alt="image" /></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>C. S. Lewis</td>
+            <td><img src="/img/other/down.png" alt="image" /></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>J. R. R. Tolkien</td>
+            <td><img src="/img/other/up.png" alt="image" /></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>George Orwell</td>
+            <td><img src="/img/other/down.png" alt="image" /></td>
+          </tr>
+        </table>
+        <!-- **********************************************END TRENDING AUTHOR**************************************-->
+      </div>
+      <!-- ***********************END SIDEBAR******************************* -->
+      <!-- +++++++++++++++++++++++++++MAIN  +++++++++++++++++++++++++-->
+      <div class="main">
+        <!-- +++++++++++++++++++++++++++MAIN OFFER+++++++++++++++++++++++++-->
+        <div class="main-offer">
+          <img src="/img/book/christmas_collection.jpg" alt="image" />
+          <div class="main-offer-text">
+            <h4>THIS CHRISTMAS</h4>
+            <p>Let your imagination run</p>
+          </div>
+        </div>
+        <!-- ++++++++++++++++++++++++++MAIN ARTICLES+++++++++++++++++++++++++-->
+        <div class="articles">
+          <div class="main-section-heading">New Books</div>
+          <article>
+            <img src="/img/book/hp1.jpg" alt="image" />
+            <div class="article-content">
               <h2>Microsoft Edge</h2>
               <p>
-                Microsoft Edge is a web browser developed by Microsoft, released in
-                2015. Microsoft Edge replaced Internet Explorer.
+                Microsoft Edge is a web browser developed by Microsoft, released
+                in 2015. Microsoft Edge replaced Internet Explorer.
               </p>
             </div>
-        </article>
+          </article>
 
-        <article>
-        
-          <img src="/img/book/hp3.jpg" />
-          <div class="article-content">
-            <h2>Microsoft Edge</h2>
-            <p>
-              Microsoft Edge is a web browser developed by Microsoft, released in
-              2015. Microsoft Edge replaced Internet Explorer.
-            </p>
-          </div>
-        </article> 
-         <!-- --------------------end article---------------- -->
+          <article>
+            <img src="/img/book/hp2.jpg" alt="image" />
+            <div class="article-content">
+              <h2>Microsoft Edge</h2>
+              <p>
+                Microsoft Edge is a web browser developed by Microsoft, released
+                in 2015. Microsoft Edge replaced Internet Explorer.
+              </p>
+            </div>
+          </article>
 
-         
+          <article>
+            <img src="/img/book/hp3.jpg" alt="image" />
+            <div class="article-content">
+              <h2>Microsoft Edge</h2>
+              <p>
+                Microsoft Edge is a web browser developed by Microsoft, released
+                in 2015. Microsoft Edge replaced Internet Explorer.
+              </p>
+            </div>
+          </article>         
+        </div>
+         <!-- ************************END ARTICLE************************* -->
+        <!-- ++++++++++++++++++++++++++GENRE+++++++++++++++++++++++++-->
+        <div id="genre">
+          <div class="main-section-heading">SEARCH BY GENRE</div>
+
+          <table class="genre">
+            <tbody>
+              <tr>
+                <td>Adventure</td>
+                <td>Comic Book</td>
+                <td>Fantasy</td>
+              </tr>
+              <tr>
+                <td>Action</td>
+                <td>Manga</td>
+                <td>Historical Fiction</td>
+              </tr>
+              <tr>
+                <td>Classics</td>
+                <td>Mystery</td>
+                <td>Non Fiction</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- ************************END GENRE************************* -->
       </div>
-     
+      <!-- ************************END MAIN ************************* -->
     </div>
-<!-- --------------footer-------- -->
+    <!-- ************************END CONTENT************************ -->
+
+    <!-- *********************FOOTER********************************* -->
     <div class="footer">
-        <div class="footer-logo">
-            <img src="/img/logo.png" alt="logo" class="footer-logo-img" />            
-        </div>
-      <div class="footer-content">
-        <div class="footer-section-about">
-          <h1 class="logo-text">
-            <span>Cricket</span> World
-          </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            quae, voluptatum, quod, voluptas quibusdam voluptates quidem
-            voluptatibus quos quia quas dolorum. Quisquam, quae. Quisquam
-            quibusdam quae quod, voluptatum quas.
-          </p>
-          <div class="contact">
-            <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
-            <span><i class="fas fa-envelope"></i> &nbsp;
-                       
-            <img src="/img/social/facebook.webp"  class="footer-social-img" />
-            <img src="/img/social/instagram.png"  class="footer-social-img" />
-            <img src="/img/social/linkedin.png"  class="footer-social-img" />
-            <img src="/img/social/whatsapp.png"  class="footer-social-img" />
-            <img src="/img/social/twitter.png"  class="footer-social-img" />            
-          </div>
-        </div>
-      </div>
+      <img src="/img/logo.png" class="footer-logo" alt="image" />
+      <div class="footer-content"></div>
+    </div>
+    <!-- *********************END FOOTER****************************** -->
+    <script src="/script/carosel.js"></script>
   </body>
-  <script src="/script/carosel.js"></script>
 </html>
