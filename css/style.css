@@ -227,3 +227,7 @@ article img {
     width: 100%;
     border-collapse: collapse;
 }
+.genre td :hover {
+    background-color: var(--colorB);
+    color: black;
+}
