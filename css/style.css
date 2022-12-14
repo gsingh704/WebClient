@@ -1,12 +1,19 @@
-:root {
+/* :root {
     --colorA: #272343;
-    --colorB: #bae8e8;
+    --colorB: #a0ebeb;
     --colorC: #e3f6f5;
     --colorD: #ffffff;
     
-  }
+  } */
+:root {
+
+--colorA: #009270;
+--colorB: #ffffff;
+--colorC: #ffffff;  
+
+}
 body {
-     background-color: var(--colorC); 
+    background-color: var(--colorC); 
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -19,6 +26,7 @@ body {
     height: 100px;
     display: flex;
     justify-content: center;
+   
 }
 
 /* -----------------NAV BAR-------------------------------*/
@@ -34,7 +42,7 @@ body {
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    color: #f2f2f2;
+    color: var(--colorB);
     text-align: center;
     padding: 14px 14px 14px 14px;
     text-decoration: none;
@@ -59,7 +67,7 @@ body {
 /*------------------------footer-----------------------------*/
 .footer {
     background-color: var(--colorA);
-    color: white;     
+    color: var(--colorB)  ;
     margin-top: 10px;
     height: 250px;
 }
@@ -68,7 +76,7 @@ body {
     width: 233px;
     height: 230px;
     padding: 10px;
-    background-color:white;
+    background-color:var(--colorAC);
     position: absolute;  
 
 }
@@ -174,7 +182,6 @@ article:nth-child(odd){
     flex-direction: row;
     color: var(--colorB);
     margin-top: 10px;
-    border-radius: 5px;
  }
  
 article img {
