@@ -8,8 +8,11 @@
 :root {
 
     --colorA: #004d43;
-    --colorC: #ffffff;
-    --colorB: #eed5b7;
+    --colorB: #eae0d4;
+    --colorC: #eae0d4;  
+
+    /* --colorB: #eed5b7; 
+        --colorC: #fff; */
 
 }
 
@@ -97,9 +100,9 @@ body {
     text-align: center;
 
     /* position: absolute; chnage this tro scroll*/
-    /* position: -webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
-    top: 45px; */
+    top: 45px;
 
 
 }
