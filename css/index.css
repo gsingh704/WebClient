@@ -157,3 +157,54 @@ table.genre td:hover {
     background-color: var(--colorD);
     color: var(--colorB);
     }
+/*------------------------- genre end-------------- */
+
+
+/*----------------------------------carosel------------------------------*/
+.sideTrend img {
+    vertical-align: middle;
+    width: 100%;
+    /* height: 400px */
+    
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--colorC);
+    /* border-radius: 50%; */
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active {
+    background-color: var(--colorB);
+  }
+  
+  .trendBookName  {
+    font-size: 20px;
+    color: var(--colorB);
+    padding: 10px;   
+    background-color: var(--colorA);  
+  
+  }
+  .trendDot{
+    text-align:center;
+    background-color: var(--colorA);
+    padding: 10px;
+  }
+      
+  
+  /* Fading animation
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .9} 
+    to {opacity: 1}
+  } 
+   */
+/*----------------------------------CAROSEl ENDl------------------------------*/
+
