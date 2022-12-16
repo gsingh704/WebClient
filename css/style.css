@@ -9,7 +9,8 @@
 
     --colorA: #004d43;
     --colorB: #eae0d4;
-    --colorC: #eae0d4;  
+    --colorC: #eae0d4; 
+    --colorD: #d81a1c; 
 
     /* --colorB: #eed5b7; 
         --colorC: #fff; */
@@ -58,8 +59,8 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: var(--colorB);
-    color: var(--colorA)
+    background-color: var(--colorD);
+    /* color: var(--colorA) */
 }
 
 /* Add a color to the active/current link */
@@ -242,6 +243,6 @@ article img {
     border-right: none;
 }
 table.genre td:hover {
-    background-color: var(--colorB);
-    color: var(--colorA);
+    background-color: var(--colorD);
+    color: var(--colorB);
     }
