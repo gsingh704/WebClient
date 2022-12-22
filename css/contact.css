@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.ContactSECT {  
+.ContactSECT {
   color: var(--colorA);
 }
 
@@ -18,13 +18,20 @@
 input[type=text],
 select,
 textarea {
-  width: 100%;  /* Full width */
-  padding: 12px;  /* Some padding */
-  border: 1px solid #ccc;  /* Gray border */
-  box-sizing: border-box;  /* Make sure that padding and width stays in place */
-  margin-top: 6px;  /* Add a top margin */
-  margin-bottom: 16px;  /* Bottom margin */
-  resize: vertical    /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 
 }
 
@@ -42,45 +49,124 @@ input[type=submit]:hover {
   background-color: var(--colorD);
   color: var(--colorA);
 }
-.ContactForm{
-  background-color: var(--colorA); 
+
+.ContactForm {
+  background-color: var(--colorA);
   display: flex;
-  color: var(--colorB);  
+  color: var(--colorB);
 
 }
+
 form {
   text-align: left;
   width: 50%;
   color: var(--colorA);
-  background-color: var(--colorB); 
+  background-color: var(--colorB);
   margin: 0px 5px 10px 10px;
   padding: 10px;
 }
 
-.contactInfo{
+.contactInfo {
   padding: 10px;
   width: 50%;
   background-color: var(--colorB);
-  margin: 0px 10px 10px 5px; 
+  margin: 0px 10px 10px 5px;
   color: var(--colorA);
   font-size: 20px;
   font-weight: bolder;
 }
-iframe{
+
+iframe {
   width: 100%;
   height: 400px;
-  
- 
+
+
   border: 1px solid var(--colorA);
 }
+
 .social-media {
   background-color: var(--colorA);
   color: var(--colorB);
 
 }
-.social-media iconify-icon{
+
+.social-media iconify-icon {
   transform: scale(2.5);
   padding-top: 10px;
   margin: 0px 25px 20px 25px;
 
+}
+
+
+
+.faq {
+  font-size: 20px;
+  text-align: left;
+  min-width: 768px;
+  background-color: var(--colorA);
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Accordion styles */
+
+.tab:nth-child(even)  {
+  overflow: hidden;
+  background-color: var(--colorA);
+  color: var(--colorB);
+}
+.tab:nth-child(odd)  {
+  overflow: hidden;
+  background-color: var(--colorB);
+  color: var(--colorA);
+}
+
+.tab-label{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-weight: bold;
+  cursor: pointer;  
+  font-size: 25px;
+}
+
+
+.tab-label:hover {
+  background: var(--colorD);
+  color: var(--colorA);
+}
+.tab-label::after { 
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: var(--colorA);
+  background: white;
+  transition: all 0.20s;
+}
+/* Arrow styles */
+.tab-label::after {
+  content: "\276F";  
+}
+
+input:checked + .tab-label {
+  background: var(--colorD);
+  color: var(--colorA)
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 10px;
+}
+
+/* Rotate arrow when clicked */
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
 }

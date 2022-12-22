@@ -5,20 +5,15 @@
     --colorD: #ffffff;
     
   } */
-:root {
-
+ :root {
     --colorA: #004d43;
     --colorB: #eae0d4;
-    --colorC: #eae0d4; 
+    --colorC: #ffffff; 
     --colorD: #e0d05a; 
-
-    /* --colorB: #eed5b7; 
-        --colorC: #fff; */
-
-}
+} 
 
 body {
-    background-color: var(--colorC);
+    background-color: var(--colorB);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -53,20 +48,18 @@ body {
     text-align: center;
     padding: 14px 14px 14px 14px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     display: inline-block;
 }
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: var(--colorD);
-    /* color: var(--colorA) */
-}
-
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color: var(--colorB);
     color: var(--colorA);
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: var(--colorD);
+     color: var(--colorA) ;
 }
 
 /*-----------------NAV BAR END-----------------------------*/
