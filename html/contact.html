@@ -7,73 +7,87 @@
     <link rel="stylesheet" href="/css/mobile.css" />
     <link rel="stylesheet" href="/css/carosel.css" />
     <link rel="stylesheet" href="/css/contact.css" />
-    
   </head>
   <body class="body">
     <!-- create a logo area in header -->
     <img src="/img/logo.png" class="logo" alt="image" />
     <!-- create a logo area in header -->
     <div id="topnav" class="topnav">
-      <a href="/index.html" >Home</a>
+      <a href="/index.html">Home</a>
       <!-- selected nav bar -->
       <a href="/html/shop.html">Shop</a>
-      <a href="/html/contact.html"  class="active">Contact Us</a>
+      <a href="/html/contact.html" class="active">Contact Us</a>
       <a href="/html/login.html">Login</a>
       <!-- searchbutton-->
     </div>
 
-    <div class="contact-page">   
-    <!-- <img src="/img/other/shop.jpg" class="bannerIMG" alt="shop"> -->
+    <div class="contact-page">
+      <!-- <img src="/img/other/shop.jpg" class="bannerIMG" alt="shop"> -->
 
-   
-        <div class="main-section-heading">About Us</div>
-        <div class="ContactSECT">
-          
-          <img src="/img/other/shop.jpg" alt="Shop"><br>
+      <div class="main-section-heading">About Us</div>
+      <div class="ContactSECT">
+        <img src="/img/other/shop.jpg" alt="Shop" /><br />
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quibusdam
-          voluptatum quos quas quidem nesciunt. Quisquam, quae. Quisquam
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptates, quod, quia, voluptate quae voluptatem quibusdam
-          voluptatum quos quas quidem nesciunt. Quisquam, quae. Quisquam
-          
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        voluptates, quod, quia, voluptate quae voluptatem quibusdam voluptatum
+        quos quas quidem nesciunt. Quisquam, quae. Quisquam Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Quisquam voluptates, quod, quia,
+        voluptate quae voluptatem quibusdam voluptatum quos quas quidem
+        nesciunt. Quisquam, quae. Quisquam
       </div>
       <div class="main-section-heading">Contact US</div>
-      <div class="ContactSECT">
-        
-        <br>
-        <div class="container">
-          <form action="action_page.php">
-        
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-        
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit">
-        
-          </form>
-        </div> 
-        
-    </div>
+      <div class="ContactSECT ContactForm">
+        <form>
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
 
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
 
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
 
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
 
-
-      
+          <input type="submit" value="Submit" />
+        </form>
+        <div class="contactInfo">
+          <iconify-icon inline icon="material-symbols:call"></iconify-icon>+34
+          324 324 324 <br />
+          <iconify-icon inline icon="mdi:email"></iconify-icon>
+          info@bookshop.com <br />
+          <iconify-icon inline icon="mdi:home"></iconify-icon> Carrer de Lleida,
+          25, 08500 Vic, Barcelona<br />
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5287.5175996663875!2d2.27509498511035!3d41.94618966276908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcc2ce5db89d5f992!2sGLA%20SL!5e0!3m2!1sen!2ses!4v1671710875691!5m2!1sen!2ses"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="social-media">Follow US <br />
+            <iconify-icon icon="mdi:twitter"></iconify-icon>
+            <iconify-icon icon="mdi:facebook"></iconify-icon>
+            <iconify-icon icon="mdi:instagram"></iconify-icon>
+            <iconify-icon icon="mdi:reddit"></iconify-icon>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- *********************FOOTER********************************* -->
@@ -82,6 +96,7 @@
       <div class="footer-content"></div>
     </div>
     <!-- *********************END FOOTER****************************** -->
-    <script src="/script/carosel.js"></script>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   </body>
 </html>
