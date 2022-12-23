@@ -9,7 +9,9 @@
     --colorA: #004d43;
     --colorB: #eae0d4;
     --colorC: #ffffff; 
-    --colorD: #e0d05a; 
+    --colorD: #fee632; 
+    
+  
 } 
 
 body {
@@ -74,7 +76,7 @@ body {
 
 .footer-logo {
     width: 250px;
-    background-color: var(--colorC);
+    background-color: var(--colorB);
 
 }
 
@@ -222,7 +224,7 @@ article img {
     font-weight: bold;
     color: var(--colorB);
     background-color: var(--colorA);
-    border: var(--colorC) 10px solid;
+    border: var(--colorB) 10px solid;
 }
 
 
@@ -239,7 +241,7 @@ article img {
 }
 table.genre td:hover {
     background-color: var(--colorD);
-    color: var(--colorB);
+    color: var(--colorA);
     }
 /*------------------------- genre end-------------- */
 

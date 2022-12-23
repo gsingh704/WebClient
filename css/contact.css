@@ -19,19 +19,12 @@ input[type=text],
 select,
 textarea {
   width: 100%;
-  /* Full width */
   padding: 12px;
-  /* Some padding */
   border: 1px solid #ccc;
-  /* Gray border */
   box-sizing: border-box;
-  /* Make sure that padding and width stays in place */
   margin-top: 6px;
-  /* Add a top margin */
   margin-bottom: 16px;
-  /* Bottom margin */
-  resize: vertical
-    /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical;
 
 }
 
@@ -106,15 +99,20 @@ iframe {
   background-color: var(--colorA);
 }
 
-input {
+.faq input {
   position: absolute;
   opacity: 0;
   z-index: -1;
 }
 
-/* Accordion styles */
+.tab {
+  overflow: hidden;
+  background-color: var(--colorB);
+  color: var(--colorA);
+  border: var(--colorA) 2px solid;
+}
 
-.tab:nth-child(even)  {
+/* .tab:nth-child(even)  {
   overflow: hidden;
   background-color: var(--colorA);
   color: var(--colorB);
@@ -123,50 +121,54 @@ input {
   overflow: hidden;
   background-color: var(--colorB);
   color: var(--colorA);
-}
+} */
 
-.tab-label{
+
+.tab-label {
   display: flex;
   justify-content: space-between;
   padding: 1em;
   font-weight: bold;
-  cursor: pointer;  
+  cursor: pointer;
   font-size: 25px;
 }
-
 
 .tab-label:hover {
   background: var(--colorD);
   color: var(--colorA);
 }
-.tab-label::after { 
+
+.tab-label::after {
   width: 1em;
   height: 1em;
   text-align: center;
   transition: all 0.35s;
 }
+
 .tab-content {
   max-height: 0;
   padding: 0 1em;
   color: var(--colorA);
-  background: white;
+  background: var(--colorB);
   transition: all 0.20s;
 }
+
 /* Arrow styles */
 .tab-label::after {
-  content: "\276F";  
+  content: "\276F";
 }
 
-input:checked + .tab-label {
+input:checked+.tab-label {
   background: var(--colorD);
   color: var(--colorA)
 }
-input:checked ~ .tab-content {
+
+input:checked~.tab-content {
   max-height: 100vh;
   padding: 10px;
 }
 
 /* Rotate arrow when clicked */
-input:checked + .tab-label::after {
+input:checked+.tab-label::after {
   transform: rotate(90deg);
 }
