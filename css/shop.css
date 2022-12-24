@@ -1,0 +1,37 @@
+.shop-page {
+ display: flex;
+ padding-top: 10px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    min-width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: var(--colorA);
+    color: var(--colorB);
+
+  
+  }
+  
+  .price {
+    color: var(--colorD);
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: var(--colorA);
+    background-color: var(--colorB);;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+background-color: var(--colorD);
+  }
