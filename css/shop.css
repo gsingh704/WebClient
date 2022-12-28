@@ -1,37 +1,51 @@
 .shop-page {
- display: flex;
- padding-top: 10px;
-}
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    min-width: 200px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    background-color: var(--colorA);
-    color: var(--colorB);
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 
+}
+
+.card {
+  max-width: 300px;
+  min-width: 200px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  background-color: var(--colorA);
+  color: var(--colorB);
+  margin: 10px;
+}
+
+.price {
+  color: var(--colorD);
+  font-size: 22px;
+}
+.og-price {
+  color: red;
+  font-size: 22px;
+  background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: var(--colorA);
+  text-align: center;
+  cursor: pointer;
+  width: 47%;
+  font-size: 20px;
+  margin: 1px 1px 10px 0px;
   
-  }
-  
-  .price {
-    color: var(--colorD);
-    font-size: 22px;
-  }
-  
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: var(--colorA);
-    background-color: var(--colorB);;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  .card button:hover {
-background-color: var(--colorD);
-  }
+}
+
+.card button:hover {
+  background-color: var(--colorD);
+}
+.cart {
+  background-color: var(--colorB);
+}
+.buy {
+  background-color: goldenrod;
+}
