@@ -4,7 +4,7 @@
   <style>
     .main-slide img {
       width: 50%;
-    }
+       }
     
 
     /* Container for image text */
@@ -34,9 +34,22 @@
     .demo:hover {
       opacity: 1;
     }
+      .image-txt-container {
+  display:flex;
+  align-items:center;
+  flex-direction: row;
+}
+    
   </style>
   <body>
     <h2 style="text-align: center">Slideshow Gallery</h2>
+    <div class="image-txt-container">
+      <img src="https://images4.alphacoders.com/206/thumb-350-20658.jpg">
+      <h2>
+        Text here
+      </h2>
+    </div>
+    
     <div class="caption-container">
       <p id="caption"></p>
     </div>
@@ -45,6 +58,7 @@
         <div class="mySlides">
           <img src="/img/book/hp1.jpg" />
         </div>
+        
 
         <div class="mySlides">
           <img src="/img/book/hp2.jpg" />
