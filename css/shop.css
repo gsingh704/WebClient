@@ -49,3 +49,10 @@
 .buy {
   background-color: goldenrod;
 }
+.shop-slider {
+  max-width: 400px;
+}
+.shop-slider img {
+  width: 100%;
+  
+}

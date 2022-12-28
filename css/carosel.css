@@ -15,7 +15,7 @@
   transition: background-color 0.6s ease;
 }
 .active {
-  background-color: var(--colorB);
+  background-color: var(--colorD);
 }
 
 .trendBookName  {
