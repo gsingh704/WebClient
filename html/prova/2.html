@@ -2,10 +2,12 @@
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
-    .main-slide img {
+    img {
+      width: 100%;
+    }
+    .mySlides td {
       width: 50%;
-       }
-    
+    }
 
     /* Container for image text */
     .caption-container {
@@ -34,103 +36,158 @@
     .demo:hover {
       opacity: 1;
     }
-      .image-txt-container {
-  display:flex;
-  align-items:center;
-  flex-direction: row;
-}
-    
   </style>
   <body>
-    <h2 style="text-align: center">Slideshow Gallery</h2>
-    <div class="image-txt-container">
-      <img src="https://images4.alphacoders.com/206/thumb-350-20658.jpg">
-      <h2>
-        Text here
-      </h2>
-    </div>
-    
     <div class="caption-container">
       <p id="caption"></p>
     </div>
-    <div class="slide-container">
-      <div class="main-slide">
-        <div class="mySlides">
-          <img src="/img/book/hp1.jpg" />
-        </div>
-        
 
-        <div class="mySlides">
-          <img src="/img/book/hp2.jpg" />
-          asdgvasdgvas
-        </div>
-
-        <div class="mySlides">
-          <img src="/img/book/hp3.jpg" />
-        </div>
-
-        <div class="mySlides">
-          <img src="/img/book/hp4.jpg" />
-        </div>
-
-        <div class="mySlides">
-          <img src="/img/book/hp5.jpg" />
-        </div>
-
-        <div class="mySlides">
-          <img src="/img/book/hp6.jpg" />
-        </div>
+    <div class="main-slide">
+      <div class="mySlides">
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="/img/book/hp1.jpg" /></td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at
+                cum quidem voluptatibus laborum consequatur numquam sit,
+                repudiandae sequi! Reiciendis sit similique odit odio laboriosam
+                blanditiis quibusdam tempora
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="row">
-        <div class="column">
-          <img
-            class="demo"
-            src="/img/book/hp1.jpg"
-            onclick="currentSlide(1)"
-            alt="The Woods"
-          />
-        </div>
-        <div class="column">
-          <img
-            class="demo"
-            src="/img/book/hp2.jpg"
-            onclick="currentSlide(2)"
-            alt="Cinque Terre"
-          />
-        </div>
-        <div class="column">
-          <img
-            class="demo"
-            src="/img/book/hp3.jpg"
-            onclick="currentSlide(3)"
-            alt="Mountains and fjords"
-          />
-        </div>
-        <div class="column">
-          <img
-            class="demo"
-            src="/img/book/hp4.jpg"
-            onclick="currentSlide(4)"
-            alt="Northern Lights"
-          />
-        </div>
-        <div class="column">
-          <img
-            class="demo"
-            src="/img/book/hp5.jpg"
-            onclick="currentSlide(5)"
-            alt="Nature and sunrise"
-          />
-        </div>
-        <div class="column">
-          <img
-            class="demo"
-            src="/img/book/hp6.jpg"
-            onclick="currentSlide(6)"
-            alt="Snowy Mountains"
-          />
-        </div>
+      <div class="mySlides">
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="/img/book/hp2.jpg" /></td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at
+                cum quidem voluptatibus laborum consequatur numquam sit,
+                repudiandae sequi! Reiciendis sit similique odit odio laboriosam
+                blanditiis quibusdam tempora
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mySlides">
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="/img/book/hp3.jpg" /></td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at
+                cum quidem voluptatibus laborum consequatur numquam sit,
+                repudiandae sequi! Reiciendis sit similique odit odio laboriosam
+                blanditiis quibusdam tempora
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mySlides">
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="/img/book/hp4.jpg" /></td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at
+                cum quidem voluptatibus laborum consequatur numquam sit,
+                repudiandae sequi! Reiciendis sit similique odit odio laboriosam
+                blanditiis quibusdam tempora
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mySlides">
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="/img/book/hp5.jpg" /></td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at
+                cum quidem voluptatibus laborum consequatur numquam sit,
+                repudiandae sequi! Reiciendis sit similique odit odio laboriosam
+                blanditiis quibusdam tempora
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mySlides">
+        <table>
+          <tbody>
+            <tr>
+              <td><img src="/img/book/hp6.jpg" /></td>
+              <td>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at
+                cum quidem voluptatibus laborum consequatur numquam sit,
+                repudiandae sequi! Reiciendis sit similique odit odio laboriosam
+                blanditiis quibusdam tempora
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img
+          class="demo"
+          src="/img/book/hp1.jpg"
+          onclick="currentSlide(1)"
+          alt="The Woods"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="/img/book/hp2.jpg"
+          onclick="currentSlide(2)"
+          alt="Cinque Terre"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="/img/book/hp3.jpg"
+          onclick="currentSlide(3)"
+          alt="Mountains and fjords"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="/img/book/hp4.jpg"
+          onclick="currentSlide(4)"
+          alt="Northern Lights"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="/img/book/hp5.jpg"
+          onclick="currentSlide(5)"
+          alt="Nature and sunrise"
+        />
+      </div>
+      <div class="column">
+        <img
+          class="demo"
+          src="/img/book/hp6.jpg"
+          onclick="currentSlide(6)"
+          alt="Snowy Mountains"
+        />
       </div>
     </div>
 
