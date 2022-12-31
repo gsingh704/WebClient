@@ -7,7 +7,7 @@
   } */
  :root {
     --colorA: #004d43;
-    --colorB: #eae0d4;
+    --colorB: #d4c1a9;
     --colorC: #ffffff; 
     --colorD: #fee632; 
     
@@ -22,7 +22,9 @@ body {
     max-width: 1200px;
 
 }
-
+a:hover {
+    color: var(--colorD)
+  }
 /*------LOGO------------------- */
 .logo {
     height: 100px;
@@ -67,19 +69,45 @@ body {
 /*-----------------NAV BAR END-----------------------------*/
 
 /*------------------------footer-----------------------------*/
-.footer {
-    background-color: var(--colorA);
-    color: var(--colorB);
-    margin-top: 10px;
-    height: 250px;
-}
+  footer {        
+        display: flex;        
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .foot-logo {
+        padding: 10px;
+        background-color: var(--colorB);
+      }
+      .foot-logo img {
+        max-width: 238px;        
+        vertical-align: middle;
+        align-self: center;
+      }
 
-.footer-logo {
-    width: 250px;
-    background-color: var(--colorB);
+      .foot-contact {
+        padding: 1rem;
+        background-color: var(--colorA);
+        color: var(--colorB);
+        width: 100%;
+        font-size: 20px;
+        align-items: center;
+      }
+      a{
+        color: var(--colorB);
+      }
+      .social-media iconify-icon {
+        transform: scale(1.5);
+        padding-top: 10px;
+        margin: 0px 25px 20px 25px;
 
-}
-
+      
+      }
+      
+      
+      
 
 
 /*------------------------footer end-----------------------------*/
