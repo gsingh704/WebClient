@@ -6,11 +6,12 @@
     <meta name="author" content="Gurjant Singh">
     <meta name="description" content="Bookshop">
     <meta name="keywords" content="Bookshop"> 
-    
+
     <link rel="stylesheet" href="../css/style.css" >
     <link rel="stylesheet" href="../css/mobile.css">
     <link rel="stylesheet" href="../css/carosel.css">
     <link rel="stylesheet" href="../css/shop.css">
+
   </head>
   <body class="body">
      <!-- create a logo area in header -->
@@ -24,8 +25,165 @@
        <a href="login.html"><iconify-icon inline icon="material-symbols:login"></iconify-icon> Login</a>
        <!-- searchbutton-->
      </div>
-    
+
+  
+      
     <div class="shop-page">
+      <div class="gallery">
+      <div class="main-section-heading">
+        <span id="caption"></span>
+      </div>
+      <div class="main-slide">
+        <div class="slides">
+          <table>
+            <tbody>
+              <tr>
+                <td><img src="../img/book/hp1.jpg" /></td>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at
+                  cum quidem voluptatibus laborum consequatur numquam sit,
+                  repudiandae sequi! Reiciendis sit similique odit odio laboriosam
+                  blanditiis quibusdam tempora
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+        <div class="slides">
+          <table>
+            <tbody>
+              <tr>
+                <td><img src="../img/book/hp2.jpg" /></td>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at
+                  cum quidem voluptatibus laborum consequatur numquam sit,
+                  repudiandae sequi! Reiciendis sit similique odit odio laboriosam
+                  blanditiis quibusdam tempora
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+        <div class="slides">
+          <table>
+            <tbody>
+              <tr>
+                <td><img src="../img/book/hp3.jpg" /></td>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at
+                  cum quidem voluptatibus laborum consequatur numquam sit,
+                  repudiandae sequi! Reiciendis sit similique odit odio laboriosam
+                  blanditiis quibusdam tempora
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+        <div class="slides">
+          <table>
+            <tbody>
+              <tr>
+                <td><img src="../img/book/hp4.jpg" /></td>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at
+                  cum quidem voluptatibus laborum consequatur numquam sit,
+                  repudiandae sequi! Reiciendis sit similique odit odio laboriosam
+                  blanditiis quibusdam tempora
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+        <div class="slides">
+          <table>
+            <tbody>
+              <tr>
+                <td><img src="../img/book/hp5.jpg" /></td>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at
+                  cum quidem voluptatibus laborum consequatur numquam sit,
+                  repudiandae sequi! Reiciendis sit similique odit odio laboriosam
+                  blanditiis quibusdam tempora
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+        <div class="slides">
+          <table>
+            <tbody>
+              <tr>
+                <td><img src="../img/book/hp6.jpg" /></td>
+                <td>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod at
+                  cum quidem voluptatibus laborum consequatur numquam sit,
+                  repudiandae sequi! Reiciendis sit similique odit odio laboriosam
+                  blanditiis quibusdam tempora
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="column">
+          <img
+            class="row-books"
+            src="../img/book/hp1.jpg"
+            onclick="currentSlide(1)"
+            alt="The Woods"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="row-books"
+            src="../img/book/hp2.jpg"
+            onclick="currentSlide(2)"
+            alt="Cinque Terre"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="row-books"
+            src="../img/book/hp3.jpg"
+            onclick="currentSlide(3)"
+            alt="Mountains and fjords"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="row-books"
+            src="../img/book/hp4.jpg"
+            onclick="currentSlide(4)"
+            alt="Northern Lights"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="row-books"
+            src="../img/book/hp5.jpg"
+            onclick="currentSlide(5)"
+            alt="Nature and sunrise"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="row-books"
+            src="../img/book/hp6.jpg"
+            onclick="currentSlide(6)"
+            alt="Snowy Mountains"
+          />
+        </div>
+      </div> <br>
+    </div>
+   
+<!-- ------------------------------------------end gallery--------------------------------------- -->
       <div class="card">
         <img src="../img/book/hp1.jpg" alt="hp1"  >
         <h1>Tailored Jeans</h1>
@@ -179,6 +337,37 @@
       </div>
     </footer>
     <!-- *********************END FOOTER****************************** -->
+   
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("row-books");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
 
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   </body>

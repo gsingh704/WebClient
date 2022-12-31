@@ -1,9 +1,7 @@
 .shop-page {
   display: flex;
-  padding: 10px;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .card {
@@ -54,10 +52,47 @@
 .buy {
   background-color: goldenrod;
 }
-.shop-slider {
-  max-width: 400px;
+
+
+.gallery {
+ width:60%;
+ 
 }
-.shop-slider img {
-  width: 100%;
+
+.slides td {
+  width: 50%;
+  padding: 10px;
   
 }
+.slides{
+  
+  border: 2px solid var(--colorA);
+  
+  
+}
+.main-slide img {
+  width: 100%  
+} 
+
+/* Container for image text */
+
+.row img {
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.row-books {
+  opacity: 0.6;
+}
+.active,
+.row-books:hover {
+  opacity: 1;
+}
+
