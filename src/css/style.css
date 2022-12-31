@@ -7,7 +7,7 @@
   } */
  :root {
     --colorA: #004d43;
-    --colorB: #d4c1a9;
+    --colorB: #e1d8cd;
     --colorC: #ffffff; 
     --colorD: #fee632; 
     
@@ -36,7 +36,7 @@ a:hover {
 
 /* -----------------NAV BAR-------------------------------*/
 /* Add a black background color to the top navigation */
-#topnav {
+.topnav {
     background-color: var(--colorA);
     position: -webkit-sticky;
     position: sticky;

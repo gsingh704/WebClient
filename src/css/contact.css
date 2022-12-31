@@ -2,16 +2,38 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: var(--colorA);
 }
 
 .ContactSECT {
   color: var(--colorA);
 }
 
-.ContactSECT img {
+.about-img {
   width: 40%;
   height: auto;
   margin: 10px;
+}
+.review{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--colorA);
+}
+.review blockquote:nth-child(even){
+  width: 10%;
+  height: auto;
+  margin: 10px;
+  background-color: var(--colorC);
+  padding: 10px;
+}
+.review blockquote:nth-child(odd){
+  width: 10%;
+  height: auto;
+  margin: 10px;
+  background-color: var(--colorD);
+  padding: 10px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
