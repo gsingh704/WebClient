@@ -1,17 +1,112 @@
 <html>
-<head>
-<title>Login Form</title>
-</head>
-<body>
-<form action="/php/login.php" method="post">
+  <head>
+    <title>Login Form</title>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <meta name="author" content="Gurjant Singh" />
+    <meta name="description" content="Bookshop" />
+    <meta name="keywords" content="Bookshop" />
 
-<label for="username">Username:</label><br>
-<input type="text" id="username" name="username"><br>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
 
-<label for="password">Password:</label><br>
-<input type="password" id="password" name="password"><br><br>
-<input type="submit" value="Submit">
-</form> 
+  <body class="body">
+    <!-- create a logo area in header -->
+    <img src="../img/logo.png" class="logo" alt="image" />
+    <div class="topnav">
+      <a href="../index.html"><iconify-icon inline icon="mdi:home"></iconify-icon>
+        Home</a>
+      <a href="shop.html"><iconify-icon inline icon="mdi:shop"></iconify-icon>
+        Shop</a>
+      <a href="contact.html"><iconify-icon inline
+          icon="ic:outline-contact-support"></iconify-icon>
+        Contact Us</a>
+      <a href="login.html" class="active"><iconify-icon inline
+          icon="material-symbols:login"></iconify-icon>
+        Login</a>
+      <!-- searchbutton-->
+    </div>
 
-</body>
+
+
+
+    <div class="tabs">
+      <input class="radiotab" name="tabs" tabindex="1" type="radio" id="tabone"
+        checked="checked">
+      <label class="label main-section-heading" for="tabone"><iconify-icon inline
+        icon="material-symbols:login"></iconify-icon> Login</label>
+      <div class="panel" tabindex="1">
+        <form>
+          <label for="username"><iconify-icon inline icon="icon-park-outline:edit-name"></iconify-icon> Username</label><br>
+          <input type="text" id="username" name="username" /><br />
+
+          <label for="password"><iconify-icon inline icon="mdi:password"></iconify-icon> Password</label> <br>
+          <input type="password" id="password" name="password" /><br />
+          <button class="login"><iconify-icon inline
+            icon="material-symbols:login"></iconify-icon> Login</button>
+          <div class="other-buttons">
+            <button class="Cncl-btn"><iconify-icon inline icon="material-symbols:cancel"></iconify-icon> Cancel</button>
+            <button><iconify-icon inline icon="mdi:forgot-password"></iconify-icon> Forgot Password</button></div>
+        </form>
+      </div>
+      <input class="radiotab" tabindex="1" name="tabs" type="radio" id="tabtwo">
+      <label class="label main-section-heading" for="tabtwo"><iconify-icon inline icon="mdi:register"></iconify-icon> Register</label>
+      <div class="panel" tabindex="1">
+        <form>
+          <!-- Register form -->
+          <label for="name"><iconify-icon inline icon="gridicons:nametag"></iconify-icon> First Name</label>
+          <input type="text" id="name" name="name" /><br />
+          <label for="name"><iconify-icon inline icon="dashicons:nametag"></iconify-icon> Last Name</label>
+          <input type="text" id="name" name="name" /><br />
+          <label for="email"><iconify-icon inline icon="mdi:email"></iconify-icon> Email</label>
+          <input type="email" id="email" name="email" /><br />
+          <label for="password"><iconify-icon inline icon="mdi:password"></iconify-icon>  Password</label>
+          <input type="password" id="password" name="password" /><br />
+          <label for="password"><iconify-icon inline icon="line-md:confirm"></iconify-icon> Confirm Password</label>
+          <input type="password" id="password" name="password" /><br />
+          <button class="login"><iconify-icon inline icon="mdi:register"></iconify-icon> Register</button>
+          <div class="other-buttons">
+            <button class="Cncl-btn"><iconify-icon inline icon="material-symbols:cancel"></iconify-icon> Cancel</button>
+            <button><iconify-icon inline
+              icon="material-symbols:login"></iconify-icon>Login Instead</button></div>
+
+        </form>
+
+      </div>
+
+    </div>
+    <input class="radiotab" tabindex="1" name="tabs" type="radio" id="tabthree">
+  </div>
+  <!-- *********************FOOTER********************************* -->
+  <footer>
+    <div class="foot-logo">
+      <img src="/src/img/logo.png" alt="">
+    </div>
+    <div class="foot-contact">
+      <iconify-icon inline icon="material-symbols:call"></iconify-icon> +34
+      324 324 324 <br>
+      <iconify-icon inline icon="mdi:email"></iconify-icon>
+      info@bookshop.com <br>
+
+      <address>
+        <a href="https://goo.gl/maps/4Z9Z9Z9Z9Z9Z9Z9Z9">
+          <iconify-icon inline icon="mdi:home"></iconify-icon> Carrer de
+          Lleida, 25, 08500 Vic, Barcelona</a>
+      </address>
+
+      <div class="social-media">
+        <a href="http://www.twiiter.com"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+        <a href="http://www.facebook.com"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
+        <a href="http://www.instagram.com"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+        <a href="http://old.reddit.com"><iconify-icon icon="mdi:reddit"></iconify-icon></a>
+      </div>
+    </div>
+
+
+
+    <script
+      src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+  </body>
 </html>
