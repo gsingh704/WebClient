@@ -1,7 +1,57 @@
-.shop-page {
+
+
+
+.gallery {
+  width: 70%;
+  margin: auto;
+  
+  
+}
+
+.slides td {
+  width: 50%;
+ 
+  
+}
+.slides{
+  
+  border: 2px solid var(--colorA);
+  
+  
+}
+.main-slide img {
+  width: 100%  
+} 
+
+/* Container for image text */
+
+.row img {
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.row-books {
+  opacity: 0.6;
+}
+.active,
+.row-books:hover {
+  opacity: 1;
+}
+.shop-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }
 
 .card {
@@ -52,47 +102,7 @@
 .buy {
   background-color: goldenrod;
 }
-
-
-.gallery {
-  
-  width:62%;
-}
-
-.slides td {
-  width: 50%;
-  padding: 10px;
-  
-}
-.slides{
-  
-  border: 2px solid var(--colorA);
-  
-  
-}
-.main-slide img {
-  width: 100%  
-} 
-
-/* Container for image text */
-
-.row img {
-  cursor: pointer;
-  width: 100%;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.row-books {
-  opacity: 0.6;
-}
-.active,
-.row-books:hover {
-  opacity: 1;
+ .All-books { 
+  margin-top: 200px;/*so that the books are not behind gallery */
 }
 
