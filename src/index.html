@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <title>Bookshop</title>
     <meta name="author" content="Gurjant Singh">
     <meta name="description" content="Bookshop">
-    <meta name="keywords" content="Bookshop"> 
+    <meta name="keywords" content="Bookshop">
 
 
-    <link rel="stylesheet" href="css/style.css" >
-    <link rel="stylesheet" href="css/mobile.css" >
-    <link rel="stylesheet" href="css/carosel.css" >  
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/carosel.css">
     <!-- scripts are on the bottom of the page  -->
-    
+
   </head>
   <body class="body">
     <!-- create a logo area in header -->
-    <img src="img/logo.png" class="logo" alt="image" >
-    <div  class="topnav">
-      <a href="index.html" class="active">   <iconify-icon inline icon="mdi:home"></iconify-icon> Home</a>
+    <img src="img/logo.png" class="logo" alt="image">
+    <div class="topnav">
+      <a href="index.html" class="active"> <iconify-icon inline icon="mdi:home"></iconify-icon>
+        Home</a>
       <!-- selected nav bar -->
-      <a href="html/shop.html"><iconify-icon inline icon="mdi:shop"></iconify-icon> Shop</a>
-      <a href="html/contact.html"> <iconify-icon inline icon="ic:outline-contact-support"></iconify-icon
-        > Contact Us</a>
-      <a href="html/login.html"><iconify-icon inline icon="material-symbols:login"></iconify-icon> Login</a>
+      <a href="html/shop.html"><iconify-icon inline icon="mdi:shop"></iconify-icon>
+        Shop</a>
+      <a href="html/contact.html"> <iconify-icon inline
+          icon="ic:outline-contact-support"></iconify-icon> Contact Us</a>
+      <a href="html/login.html"><iconify-icon inline
+          icon="material-symbols:login"></iconify-icon> Login</a>
       <!-- searchbutton-->
+      <div class="search">
+        <input type="text" placeholder="Search..">
+        <button type="submit"><iconify-icon inline icon="ic:outline-search"></iconify-icon></button>
+      </div>
     </div>
     <!-- ++++++++++++++++++++++++CONTENT++++++++++++++++++++++++++++ -->
     <div class="content">
@@ -35,19 +42,19 @@
           <div class="sidebarHead">TRENDING BOOKS</div>
           <div class="mySlides">
             <div class="trendBookName">1 / 3</div>
-            <img src="img/book/hp1.jpg" alt="image" >
+            <img src="img/book/hp1.jpg" alt="image">
             <div class="trendBookName">Book 1</div>
           </div>
 
           <div class="mySlides">
             <div class="trendBookName">2 / 3</div>
-            <img src="img/book/hp2.jpg" alt="image" >
+            <img src="img/book/hp2.jpg" alt="image">
             <div class="trendBookName">Book 2</div>
           </div>
 
           <div class="mySlides">
             <div class="trendBookName">3 / 3</div>
-            <img src="img/book/hp3.jpg" alt="image" >
+            <img src="img/book/hp3.jpg" alt="image">
             <div class="trendBookName">Book 3</div>
           </div>
 
@@ -64,27 +71,27 @@
           <tr>
             <td>1</td>
             <td>J. K. Rowling</td>
-            <td><img src="img/other/up.png " alt="image"  ></td>
+            <td><img src="img/other/up.png " alt="image"></td>
           </tr>
           <tr>
             <td>2</td>
             <td>Leo Tolstoy</td>
-            <td><img src="img/other/same_white.png" alt="image" ></td>
+            <td><img src="img/other/same_white.png" alt="image"></td>
           </tr>
           <tr>
             <td>3</td>
             <td>C. S. Lewis</td>
-            <td><img src="img/other/down.png" alt="image" ></td>
+            <td><img src="img/other/down.png" alt="image"></td>
           </tr>
           <tr>
             <td>4</td>
             <td>J. R. R. Tolkien</td>
-            <td><img src="img/other/up.png" alt="image" ></td>
+            <td><img src="img/other/up.png" alt="image"></td>
           </tr>
           <tr>
             <td>5</td>
             <td>George Orwell</td>
-            <td><img src="img/other/down.png" alt="image" ></td>
+            <td><img src="img/other/down.png" alt="image"></td>
           </tr>
         </table>
         <!-- **********************************************END TRENDING AUTHOR**************************************-->
@@ -94,7 +101,7 @@
       <div class="main">
         <!-- +++++++++++++++++++++++++++MAIN OFFER+++++++++++++++++++++++++-->
         <div class="main-offer">
-          <img src="img/book/christmas_collection.jpg" alt="image" >
+          <img src="img/book/christmas_collection.jpg" alt="image">
           <div class="main-offer-text">
             <h4>THIS CHRISTMAS</h4>
             <p>Let your imagination run</p>
@@ -105,9 +112,9 @@
           <div class="main-section-heading">
             <iconify-icon inline icon="ph:books-bold"></iconify-icon> New Books
           </div>
-         
+
           <article>
-            <img src="img/book/hp1.jpg" alt="image" >
+            <img src="img/book/hp1.jpg" alt="image">
             <div class="article-content">
               <h2>Microsoft Edge</h2>
               <p>
@@ -118,7 +125,7 @@
           </article>
 
           <article>
-            <img src="img/book/hp2.jpg" alt="image" >
+            <img src="img/book/hp2.jpg" alt="image">
             <div class="article-content">
               <h2>Microsoft Edge</h2>
               <p>
@@ -129,7 +136,7 @@
           </article>
 
           <article>
-            <img src="img/book/hp3.jpg" alt="image" >
+            <img src="img/book/hp3.jpg" alt="image">
             <div class="article-content">
               <h2>Microsoft Edge</h2>
               <p>
@@ -142,63 +149,64 @@
         <!-- ************************END ARTICLE************************* -->
         <!-- ++++++++++++++++++++++++++GENRE+++++++++++++++++++++++++-->
         <div id="genre">
-          <div class="main-section-heading">SEARCH BY GENRE</div>
-
+          <div class="main-section-heading"><iconify-icon inline
+              icon="carbon:categories"></iconify-icon> SEARCH BY GENRE</div>
           <table class="genre">
             <tbody>
               <tr>
-                <td>Adventure</td>
-                <td>Comic Book</td>
-                <td>Fantasy</td>
-              </tr>
-              <tr>
-                <td>Action</td>
-                <td>Manga</td>
-                <td>Historical Fiction</td>
-              </tr>
-              <tr>
-                <td>Classics</td>
-                <td>Mystery</td>
-                <td>Non Fiction</td>
-              </tr>
-            </tbody>
-          </table>
+                <td><a href="html/shop.html">Adventure</a></td>
+                <td><a href="html/shop.html">Comic Book</a></td>
+                <td><a href="html/shop.html">Fantasy</td>
+                </tr>
+                <tr>
+                  <td><a href="html/shop.html">Action</a></td>
+                  <td><a href="html/shop.html">Manga</a></td>
+                  <td><a href="html/shop.html">Historical Fiction</a></td>
+                </tr>
+                <tr>
+                  <td><a href="html/shop.html">Classics</a></td>
+                  <td><a href="html/shop.html">Mystery</a></td>
+                  <td><a href="html/shop.html">Non Fiction</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- ************************END GENRE************************* -->
         </div>
-        <!-- ************************END GENRE************************* -->
+        <!-- ************************END MAIN ************************* -->
       </div>
-      <!-- ************************END MAIN ************************* -->
-    </div>
-    <!-- ************************END CONTENT************************ -->
+      <!-- ************************END CONTENT************************ -->
 
-    <!-- *********************FOOTER********************************* -->
-    <footer>
-      <div class="foot-logo">
-        <img src="/src/img/logo.png" alt="">
-      </div>
-      <div class="foot-contact">
-        <iconify-icon inline icon="material-symbols:call"></iconify-icon> +34
-        324 324 324 <br>
-        <iconify-icon inline icon="mdi:email"></iconify-icon>
-        info@bookshop.com <br>
-
-        <address>
-          <a href="https://goo.gl/maps/4Z9Z9Z9Z9Z9Z9Z9Z9">
-            <iconify-icon inline icon="mdi:home"></iconify-icon> Carrer de
-            Lleida, 25, 08500 Vic, Barcelona</a
-          >
-        </address>
-
-        <div class="social-media">
-          <a href="http://www.twiiter.com"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
-          <a href="http://www.facebook.com"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
-          <a href="http://www.instagram.com"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
-          <a href="http://old.reddit.com"><iconify-icon icon="mdi:reddit"></iconify-icon></a>
+      <!-- *********************FOOTER********************************* -->
+      <footer>
+        <div class="foot-logo">
+          <img src="/src/img/logo.png" alt="">
         </div>
-      </div>
-    <!-- <p>All Right Reserves</p> -->
-    <!-- *********************END FOOTER****************************** -->
-    <script src="js/carosel.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        <div class="foot-contact">
+          <iconify-icon inline icon="material-symbols:call"></iconify-icon> +34
+          324 324 324 <br>
+          <iconify-icon inline icon="mdi:email"></iconify-icon><a
+            href="mailto:info@bookshop.com">
+            info@bookshop.com</a> <br>
 
-  </body>
-</html>
+          <address>
+            <a href="https://goo.gl/maps/4Z9Z9Z9Z9Z9Z9Z9Z9">
+              <iconify-icon inline icon="mdi:home"></iconify-icon> Carrer de
+              Lleida, 25, 08500 Vic, Barcelona</a>
+          </address>
+
+          <div class="social-media">
+            <a href="http://www.twiiter.com"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+            <a href="http://www.facebook.com"><iconify-icon icon="mdi:facebook"></iconify-icon></a>
+            <a href="http://www.instagram.com"><iconify-icon
+                icon="mdi:instagram"></iconify-icon></a>
+            <a href="http://old.reddit.com"><iconify-icon icon="mdi:reddit"></iconify-icon></a>
+          </div>
+        </div>
+        <!-- <p>All Right Reserves</p> -->
+        <!-- *********************END FOOTER****************************** -->
+        <script src="js/carosel.js"></script>
+        <script
+          src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+      </body>
+    </html>

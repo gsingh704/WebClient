@@ -90,6 +90,10 @@ form {
   font-size: 20px;
   font-weight: bolder;
 }
+.contactInfo a {
+  color: var(--colorA);
+  text-decoration: none;
+}
 
 iframe {
   width: 100%;

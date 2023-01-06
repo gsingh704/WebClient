@@ -5,14 +5,14 @@
     --colorD: #ffffff;
     
   } */
- :root {
+:root {
     --colorA: #004d43;
     --colorB: #e1d8cd;
-    --colorC: #ffffff; 
-    --colorD: #fee632; 
-    
-  
-} 
+    --colorC: #ffffff;
+    --colorD: #fee632;
+
+
+}
 
 body {
     background-color: var(--colorB);
@@ -22,9 +22,17 @@ body {
     max-width: 1200px;
 
 }
+
 a:hover {
     color: var(--colorD)
-  }
+}
+
+a {
+    color: var(--colorB);
+    text-decoration: none;
+}
+
+
 /*------LOGO------------------- */
 .logo {
     height: 100px;
@@ -54,60 +62,89 @@ a:hover {
     text-decoration: none;
     font-size: 20px;
     display: inline-block;
+    
 }
+
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color: var(--colorB);
     color: var(--colorA);
 }
+
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: var(--colorD);
-     color: var(--colorA) ;
+    color: var(--colorA);
 }
 
+.search {
+    float: right;
+    
+
+}
+.search input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+.search button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  .search button:hover {
+    background: var(--colorD);
+  }
 /*-----------------NAV BAR END-----------------------------*/
 
 /*------------------------footer-----------------------------*/
-  footer {        
-        display: flex;        
-        width: 100%;
-        margin-top: 10px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-      }
-      .foot-logo {
-        padding: 10px;
-        background-color: var(--colorB);
-      }
-      .foot-logo img {
-        max-width: 238px;        
-        vertical-align: middle;
-        align-self: center;
-      }
+footer {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-      .foot-contact {
-        padding: 1rem;
-        background-color: var(--colorA);
-        color: var(--colorB);
-        width: 100%;
-        font-size: 20px;
-        align-items: center;
-      }
-      a{
-        color: var(--colorB);
-      }
-      .social-media iconify-icon {
-        transform: scale(1.5);
-        padding-top: 10px;
-        margin: 0px 25px 20px 25px;
+.foot-logo {
+    padding: 10px;
+    background-color: var(--colorB);
+}
 
-      
-      }
-      
-      
-      
+.foot-logo img {
+    max-width: 238px;
+    vertical-align: middle;
+    align-self: center;
+}
+
+.foot-contact {
+    padding: 1rem;
+    background-color: var(--colorA);
+    color: var(--colorB);
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+}
+
+
+
+.social-media iconify-icon {
+    transform: scale(1.5);
+    padding-top: 10px;
+    margin: 0px 25px 20px 25px;
+
+
+}
+
+
+
 
 
 /*------------------------footer end-----------------------------*/
@@ -190,15 +227,15 @@ a:hover {
 .main-offer-text {
     font-size: 40px;
     position: absolute;
-    bottom: 20px;
-    right: 25%;
-    margin-bottom: 15%;
+    bottom: 10%;
+    right: 10%;
     color: var(--colorA);
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
     background: #eed5b779;
     backdrop-filter: blur(5px) brightness(100%);
+
 }
 
 .main-section-heading {
@@ -246,6 +283,7 @@ article img {
     width: 100%;
     border-collapse: collapse;
 }
+
 .genre td {
     padding: 20px;
     text-align: center;
@@ -268,10 +306,12 @@ article img {
 .genre tr td:last-child {
     border-right: none;
 }
+
 table.genre td:hover {
     background-color: var(--colorD);
     color: var(--colorA);
-    }
+}
+
 /*------------------------- genre end-------------- */
 
 
@@ -280,10 +320,11 @@ table.genre td:hover {
     vertical-align: middle;
     width: 100%;
     /* height: 400px */
-    
-  }
-  /* The dots/bullets/indicators */
-  .dot {
+
+}
+
+/* The dots/bullets/indicators */
+.dot {
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -291,26 +332,28 @@ table.genre td:hover {
     /* border-radius: 50%; */
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  .active {
+}
+
+.active {
     background-color: var(--colorB);
-  }
-  
-  .trendBookName  {
+}
+
+.trendBookName {
     font-size: 20px;
     color: var(--colorB);
-    padding: 10px;   
-    background-color: var(--colorA);  
-  
-  }
-  .trendDot{
-    text-align:center;
+    padding: 10px;
+    background-color: var(--colorA);
+
+}
+
+.trendDot {
+    text-align: center;
     background-color: var(--colorA);
     padding: 10px;
-  }
-      
-  
-  /* Fading animation
+}
+
+
+/* Fading animation
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -322,4 +365,3 @@ table.genre td:hover {
   } 
    */
 /*----------------------------------CAROSEl ENDl------------------------------*/
-
