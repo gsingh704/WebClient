@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.radiotab {
+    position: absolute;
+    opacity: 0;
+}
+
+.label {
+    width: 100%;
+    padding: 10px;
+    background: var(--colorC);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--colorA);
+    transition: background .3s, color .3s;
+    border: none;
+    border-radius: 0;
+
+}
+
+.label:hover {
+    background: var(--colorD);
+}
+
+.label:active {
+    background: var(--colorA);
+}
+
+.radiotab:checked+.label {
+    background: var(--colorA);
+    color: var(--colorB);
+    border-top: solid 2px var(--colorC);
+    border-left: solid 2px var(--colorC);
+    border-right: solid 2px var(--colorC);
+    border-bottom: none;
+}
+
+.panel {
+    display: none;
+    padding: 20px;
+    background: var(--colorA);
+    width: 100%;
+    color: var(--colorB);
+    border-left: solid 2px var(--colorC);
+    border-bottom: solid 2px var(--colorC);
+    border-right: solid 2px var(--colorC);
+    font-size: 25px;
+
+}
+
+.radiotab:checked+.label+.panel {
+    display: block;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+
+button {
+    width: 45%;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.login {
+    width: 100%;
+    background-color: #04aa6d;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+.other-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+
+}
+
+.other-buttons button {
+    width: 40%;
+}
+
+.cncl-btn {
+    width: 100%;
+    background-color: #f44336;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+    .panel {
+        order: 99;
+    }
+
+    .label {
+        width: 50%;
+        border-bottom: solid 2px var(--colorC);
+    }
+
+
+}
