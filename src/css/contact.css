@@ -14,21 +14,24 @@
   height: auto;
   margin: 10px;
 }
-.review{
+
+.review {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: var(--colorA);
 }
-.review blockquote:nth-child(even){
+
+.review blockquote:nth-child(even) {
   width: 10%;
   height: auto;
   margin: 10px;
   background-color: var(--colorC);
   padding: 10px;
 }
-.review blockquote:nth-child(odd){
+
+.review blockquote:nth-child(odd) {
   width: 10%;
   height: auto;
   margin: 10px;
@@ -37,7 +40,7 @@
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text],
+.contact-page input[type=text],
 select,
 textarea {
   width: 100%;
@@ -90,6 +93,7 @@ form {
   font-size: 20px;
   font-weight: bolder;
 }
+
 .contactInfo a {
   color: var(--colorA);
   text-decoration: none;

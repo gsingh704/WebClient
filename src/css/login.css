@@ -68,21 +68,17 @@ form {
     width: 50%;
     margin: auto;
 }
-
-input[type=text],
-input[type=password],
-input[type=email] {
+.tabs input[type=text],
+.tabs input[type=password],
+.tabs input[type=email] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-
     border: 1px solid #ccc;
     box-sizing: border-box;
-
 }
 
-button {
-    width: 45%;
+.tabs  button {    
     padding: 10px;
     font-size: 20px;
     margin-top: 10px;
@@ -94,7 +90,7 @@ button {
     background-color: #04aa6d;
 }
 
-button:hover {
+.tabs button:hover {
     opacity: 0.5;
 }
 
