@@ -10,8 +10,6 @@
     --colorB: #e1d8cd;
     --colorC: #ffffff;
     --colorD: #fee632;
-
-
 }
 
 body {
@@ -62,7 +60,7 @@ a {
     text-decoration: none;
     font-size: 20px;
     display: inline-block;
-    
+
 }
 
 /* Add a color to the active/current link */
@@ -79,15 +77,17 @@ a {
 
 .search {
     float: right;
-    
+
 
 }
+
 .search input[type=text] {
     padding: 6px;
     margin-top: 8px;
     font-size: 17px;
     border: none;
-  }
+}
+
 .search button {
     float: right;
     padding: 6px 10px;
@@ -97,10 +97,12 @@ a {
     font-size: 17px;
     border: none;
     cursor: pointer;
-  }
-  .search button:hover {
+}
+
+.search button:hover {
     background: var(--colorD);
-  }
+}
+
 /*-----------------NAV BAR END-----------------------------*/
 
 /*------------------------footer-----------------------------*/
@@ -279,38 +281,32 @@ article img {
 /* ---------------------article end ---------------------------
 
 /*------------------------- genre-------------- */
-.genre {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.genre td {
-    padding: 20px;
-    text-align: center;
+.genre-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
     font-size: 20px;
     font-weight: bold;
-    color: var(--colorB);
+    text-align: center;
+    background-color: var(--colorB);
+    margin-top: 10px;
+
+}
+
+.genre-cell {
+    padding: 20px;
     background-color: var(--colorA);
-    border: var(--colorB) 10px solid;
+    color: var(--colorB);
+
+
 }
 
-
-.genre tr:last-child td {
-    border-bottom: none;
-}
-
-.genre tr td:first-child {
-    border-left: none;
-}
-
-.genre tr td:last-child {
-    border-right: none;
-}
-
-table.genre td:hover {
+.genre-cell:hover {
     background-color: var(--colorD);
     color: var(--colorA);
 }
+
 
 /*------------------------- genre end-------------- */
 

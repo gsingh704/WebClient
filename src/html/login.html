@@ -57,11 +57,11 @@
         <form>
           <!-- Register form -->
           <label for="name"><iconify-icon inline icon="gridicons:nametag"></iconify-icon> First Name</label>
-          <input type="text" id="name" name="name" /><br />
+          <input type="text" id="name" name="name" pattern="[A-Za-z ]+" required/><br />
           <label for="name"><iconify-icon inline icon="dashicons:nametag"></iconify-icon> Last Name</label>
-          <input type="text" id="name" name="name" /><br />
+          <input type="text" id="name" name="name"pattern="[A-Za-z ]+" required /><br />
           <label for="email"><iconify-icon inline icon="mdi:email"></iconify-icon> Email</label>
-          <input type="email" id="email" name="email" /><br />
+          <input type="email" id="email" name="email" required /><br />
           <label for="password"><iconify-icon inline icon="mdi:password"></iconify-icon>  Password</label>
           <input type="password" id="password" name="password" /><br />
           <label for="password"><iconify-icon inline icon="line-md:confirm"></iconify-icon> Confirm Password</label>
@@ -69,7 +69,7 @@
           <button class="login"><iconify-icon inline icon="mdi:register"></iconify-icon> Register</button>
           <div class="other-buttons">
             <button class="Cncl-btn"><iconify-icon inline icon="material-symbols:cancel"></iconify-icon> Cancel</button>
-            <button><iconify-icon inline
+            <button onclick="location.href='login.html'" type="button"><iconify-icon inline
               icon="material-symbols:login"></iconify-icon>Login Instead</button></div>
 
         </form>
